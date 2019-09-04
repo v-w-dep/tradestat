@@ -25,8 +25,13 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 2) Enter start year, end period, number of products to display 
 3) Process can be tracked by the pyprind percentage indicator 
 4) Reports in Excel format will be generated in a new folder "Output"
+
 #### Instruction video:
-[![link not valid](http://img.youtube.com/vi/yMz8tel5gFw/0.jpg)](http://www.youtube.com/watch?v=yMz8tel5gFw "Instruction video")
+world:
+[![link not valid](http://img.youtube.com/vi/xAyWChMQHxM/0.jpg)](http://www.youtube.com/watch?v=xAyWChMQHxM "tradestat instruction: world")
+
+region:
+[![link not valid](http://img.youtube.com/vi/18e0Umq5fPo/0.jpg)](http://www.youtube.com/watch?v=18e0Umq5fPo "tradestat instruction: region")
 
 ### Trade statistics raw data definition:
 A few of periods of raw data in DAT format to demonstrate, and description file can be found [here](https://github.com/oda-developer/tradestat/tree/master/C%26SD_raw_data) in this repository

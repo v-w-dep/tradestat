@@ -8,6 +8,8 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 3) Area    (total number:   9)
 4) Country (total number: 214)
 
+![link not valid](https://raw.githubusercontent.com/oda-developer/tradestat/master/transform.PNG)
+
 ### Developing or suggested working environment: 
 - Python version 3.6 or above
 - Window 10

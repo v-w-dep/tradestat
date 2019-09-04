@@ -1,6 +1,8 @@
 # tradestat
 tradestat is a Python module to generate meaningful reports of HK's external merchandise trade statistics from numerical raw data issued by authorized department.
 
+![link not valid](https://raw.githubusercontent.com/oda-developer/tradestat/master/transform.PNG)
+
 - 4 types of reports are provided
 - HK's external merchandise trade by currency (HKD, USD) and dollar units (thousand, million) with: 
 1) World   (total number:   1) 
@@ -8,7 +10,7 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 3) Area    (total number:   9)
 4) Country (total number: 214)
 
-![link not valid](https://raw.githubusercontent.com/oda-developer/tradestat/master/transform.PNG)
+
 
 ### Developing or suggested working environment: 
 - Python version 3.6 or above

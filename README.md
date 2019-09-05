@@ -34,7 +34,7 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 - world   
 [![link not valid](http://img.youtube.com/vi/xAyWChMQHxM/0.jpg)](http://www.youtube.com/watch?v=xAyWChMQHxM "tradestat instruction: world")
 - region  
-[![link not valid](http://img.youtube.com/vi/18e0Umq5fPo/0.jpg)](http://www.youtube.com/watch?v=18e0Umq5fPo "tradestat instruction: region")
+[![link not valid](http://img.youtube.com/vi/G02mVLz-8Ow/0.jpg)](http://www.youtube.com/watch?v=G02mVLz-8Ow "tradestat instruction: region")
 
 ### Trade statistics raw data definition:
 A few of periods of raw data in DAT format to demonstrate, and description file can be found [here](https://github.com/oda-developer/tradestat/tree/master/C%26SD_raw_data) in this repository

@@ -115,10 +115,12 @@ def adjust_excelformat_xlsxwriter(writer, currency, money, periods, name):
     worksheet.write("A10", '(OF WHICH RE-EXPORTED)', fmt_bold_left)
     worksheet.write("A11", 'TOTAL TRADE', fmt_bold_left)
     worksheet.write("A12", 'TRADE BALANCE', fmt_bold_left)
-    worksheet.write("B17", '-TOTAL EXPORTS-', fmt_bold)
-    worksheet.write("B30", '-DOMESTIC EXPORTS-', fmt_bold)
-    worksheet.write("B43", '-RE-EXPORTS-', fmt_bold)
-    worksheet.write("B56", '-IMPORTS-', fmt_bold)
+    
+    worksheet.write(16, 1, '-TOTAL EXPORTS-', fmt_bold)
+    worksheet.write(16+noofprod+3, 1, '-DOMESTIC EXPORTS-', fmt_bold)
+    worksheet.write(16+2*(noofprod+3), 1, '-RE-EXPORTS-', fmt_bold)
+    worksheet.write(16+3*(noofprod+3), 1, '-IMPORTS-', fmt_bold)
+
     worksheet.merge_range('A1:J1', title, merge_format_T)
     worksheet.merge_range("H2:J2", f'VALUE : {currency} {money}', fmt_bold)
     worksheet.merge_range("H3:J3", '% CHANGE', fmt_bold)
@@ -155,9 +157,9 @@ def adjust_excelformat_xlsxwriter(writer, currency, money, periods, name):
     worksheet.hide_gridlines(2)
 
     # write source, symbol annotation at the end
-    worksheet.merge_range("A71:F71", "* INSIGNIFICANT            ∞ INFINITY", fmt_left)
-    worksheet.merge_range("A72:F72", "..OVER 1000% INCREASE      - NIL     N.E.S. NOT ELSEWHERE SPECIFIED", fmt_left)
-    worksheet.merge_range("A73:F73", "SOURCE: HONG KONG TRADE STATISTICS, CENSUS & STATISTICS DEPT.", fmt_left)
+    worksheet.merge_range(18+4*(noofprod+3),0,18+4*(noofprod+3),5, "* INSIGNIFICANT            ∞ INFINITY", fmt_left)
+    worksheet.merge_range(19+4*(noofprod+3),0,19+4*(noofprod+3),5, "..OVER 1000% INCREASE      - NIL     N.E.S. NOT ELSEWHERE SPECIFIED", fmt_left)
+    worksheet.merge_range(20+4*(noofprod+3),0,20+4*(noofprod+3),5, "SOURCE: HONG KONG TRADE STATISTICS, CENSUS & STATISTICS DEPT.", fmt_left)
 
 def adjust_excelformat_openpyxl(excel_name, currency, money):
     wb = openpyxl.load_workbook(excel_name)

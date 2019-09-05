@@ -82,7 +82,7 @@ def part3_toexcel_ranking_cty(ranking, writer, currency, money, periods):
     worksheet.write("B5", "'"+periods[-2][2:4], fmt_bold_right)
     worksheet.write("C5", "'"+periods[-1][2:4], fmt_bold_right)
 
-def adjust_excelformat_xlsxwriter(writer, currency, money, periods, name):
+def adjust_excelformat_xlsxwriter(writer, currency, money, periods, name, noofprod):
     workbook  = writer.book
     worksheet = writer.sheets[f"{currency}_{money}"]
     title = "HONG KONG'S TOP 10 TRADE WITH "+ name

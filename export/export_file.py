@@ -85,7 +85,7 @@ def part3_toexcel_ranking_cty(ranking, writer, currency, money, periods):
 def adjust_excelformat_xlsxwriter(writer, currency, money, periods, name, noofprod):
     workbook  = writer.book
     worksheet = writer.sheets[f"{currency}_{money}"]
-    title = "HONG KONG'S TOP 10 TRADE WITH "+ name
+    title = f"HONG KONG'S TOP {noofprod} TRADE WITH "+ name
     # setting format, labels, title, annotation for cells in the excel file
     merge_format_T = workbook.add_format({'bold': 1,'align': 'center',
                     'font_name': 'Arial','font_size':10})
@@ -115,7 +115,7 @@ def adjust_excelformat_xlsxwriter(writer, currency, money, periods, name, noofpr
     worksheet.write("A10", '(OF WHICH RE-EXPORTED)', fmt_bold_left)
     worksheet.write("A11", 'TOTAL TRADE', fmt_bold_left)
     worksheet.write("A12", 'TRADE BALANCE', fmt_bold_left)
-    
+
     worksheet.write(16, 1, '-TOTAL EXPORTS-', fmt_bold)
     worksheet.write(16+noofprod+3, 1, '-DOMESTIC EXPORTS-', fmt_bold)
     worksheet.write(16+2*(noofprod+3), 1, '-RE-EXPORTS-', fmt_bold)

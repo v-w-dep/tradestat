@@ -16,7 +16,7 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 - Python version 3.6 or above
 - Window 10
 
-### Dependencies: 
+### Dependencies: suggest most updated version 
 1) [pandas](https://github.com/pandas-dev/pandas) 
 2) [NumPy](https://www.numpy.org)
 3) [xlrd](https://github.com/python-excel/xlrd)

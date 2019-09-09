@@ -25,7 +25,9 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 6) [pypiwin32](https://github.com/mhammond/pywin32); try pip install pywin32 or pip install pypiwin32
 
 ### Instruction to use:
-1) Run one of the world.py, region.py, area.py, country.py each time
+1)a) Run one of the world.py, region.py, area.py, country.py each time
+  b) if not have Python or the above packages installed, run world.exe or region.exe for trial
+    
 2) Enter start year, end period, number of products to display 
 3) Process can be tracked by the pyprind percentage indicator 
 4) Reports in Excel format will be generated in a new folder "Output"

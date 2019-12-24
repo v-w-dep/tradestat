@@ -2,7 +2,7 @@ import time
 import pyprind
 import os
 from world import Report1
-from BSO.rawdata import mergedf
+from BSO.merge import mergedf
 from BSO.geography import get_geography_code
 from BSO.R1_figures import six_trades_ranking_bycty_multi_yrs, find_all_trades_ranking
 
@@ -46,7 +46,7 @@ if __name__ == '__main__':
     rank_periods = 2
     # make ranking of all countries for all trades
     All_rank_dict={}
-    type_list = ['TX','DX','RX','IM','RX_O','TT']
+    type_list = ['TX','DX','RX','IM','RXbyO','TT']
     print("Calculating ranking...please wait for a while.")
     rankdf_list = six_trades_ranking_bycty_multi_yrs(df1,df3,countrydict=cty_dict,periods=periods,num=rank_periods)
     print("Ranking completed.")
@@ -55,7 +55,6 @@ if __name__ == '__main__':
 
     # loop all area reports
     for cty_code, cty_name in cty_dict.items():
-        # if cty_code!=199:continue
         # find out the ranks of the country for all trades
         cty = Country_Report1(cty_code,cty_name,startyear,endytd,toprank,report_type="Country")
 

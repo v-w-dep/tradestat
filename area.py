@@ -2,7 +2,7 @@ import time
 import pyprind
 import os
 from world import Report1
-from BSO.rawdata import mergedf
+from BSO.merge import mergedf
 from BSO.geography import get_geography_code, get_geography_regcnty_code
 
 class Area_Report1(Report1):
@@ -67,7 +67,7 @@ if __name__ == '__main__':
         area.DX_fig, area.DX_share, area.DX_chg = area.trade_commodity(data=df1, tradetype='DX', numberofproduct=toprank, code_type=codetype)
         area.RX_fig, area.RX_share, area.RX_chg = area.trade_commodity(data=df1, tradetype='RX', numberofproduct=toprank, code_type=codetype)
         area.IM_fig, area.IM_share, area.IM_chg = area.trade_commodity(data=df1, tradetype='IM', numberofproduct=toprank, code_type=codetype)
-  
+
         area.denote_percent()
         # export reports to excel
         for i, currency in enumerate(['HKD','USD']):

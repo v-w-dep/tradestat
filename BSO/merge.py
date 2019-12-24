@@ -1,4 +1,4 @@
-#from .rawdata_array_before_df_method_past20191214 import *
+#from .rawdata_array_passmethod import *
 from .rawdata_pd_read_fwf_method import *
 
 def exclgold(df):

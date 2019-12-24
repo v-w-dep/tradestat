@@ -27,7 +27,7 @@ def country_R1_fig_oneperiod(hsccit, hscoccit, cty_code, period):
     TX = sum(df1.DX) + sum(df1.RX)
     IM = sum(df1.IM)
     TT = sum(df1.IM) + sum(df1.DX) + sum(df1.RX)
-    RXbyO = sum(df3.RX_O)
+    RXbyO = sum(df3.RXbyO)
     TB = TX - IM
 
     data={period: [TX, DX, RX, IM, RXbyO, TT, TB]}
@@ -80,7 +80,7 @@ def major_commodity_fig(df, cty_code, periods, tradetype='TX', topnumber=30, cod
     if len(periods)==5:
         sorting=[lastperiod,periods[-2],periods[-4],periods[-5], codetype]
 
-    # sorting by multiple periods, order is by the most recent to most earliest
+    # sorting by multiple periods, order is by the most recent to most far away
     df0 = pd.pivot_table(df, values=tradetype, index=[codetype],columns=['reporting_time'],\
               aggfunc=np.sum, fill_value=0, margins=True).\
               sort_values(by=sorting,\
@@ -189,10 +189,10 @@ def six_trades_ranking_bycty_multi_yrs(df1,df3,countrydict={},periods=[],num=2):
     DX_ranking = trades_ranking_bycty_multi_yrs(df1, countrydict, field='DX', periods = periods[-num:])
     RX_ranking = trades_ranking_bycty_multi_yrs(df1, countrydict, field='RX', periods = periods[-num:])
     IM_ranking = trades_ranking_bycty_multi_yrs(df1, countrydict, field='IM', periods = periods[-num:])
-    RX_O_ranking = trades_ranking_bycty_multi_yrs(df3, countrydict, field='RX_O', periods = periods[-num:])
+    RXbyO_ranking = trades_ranking_bycty_multi_yrs(df3, countrydict, field='RXbyO', periods = periods[-num:])
     TT_ranking = trades_ranking_bycty_multi_yrs(df1, countrydict, field='TT', periods = periods[-num:])
 
-    return [TX_ranking,DX_ranking,RX_ranking,IM_ranking,RX_O_ranking,TT_ranking]
+    return [TX_ranking,DX_ranking,RX_ranking,IM_ranking,RXbyO_ranking,TT_ranking]
 
 def find_ranking(df, cty_code, periods=[]):
     rank_dict={}

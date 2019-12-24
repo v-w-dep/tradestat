@@ -1,6 +1,6 @@
 """
 Define functions to get geography codes for individual country, region, area.
-The code files are imported from the folder "./metadata"
+The code file is imported from the folder "./metadata"
 """
 from xlrd import open_workbook
 

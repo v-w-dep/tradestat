@@ -1,10 +1,10 @@
 """
 Define functions to get product codes for each industry
-The code files are imported from the folder "./metadata"
+The code file is imported from the folder "./metadata"
 """
 import pprint
 from xlrd import open_workbook
-
+from collections import OrderedDict
 
 industry_file = './metadata/industry.xlsx'
 
@@ -15,7 +15,7 @@ def get_industry_code(excel_file=industry_file):
     industrygroup = book.sheet_by_name('industrygroup')
     product_codes = book.sheet_by_name('product_codes')
 
-    industry = {}
+    industry = OrderedDict()
     # get industry name
     for row in range(industrygroup.nrows):
         if row == 0 or row==1:

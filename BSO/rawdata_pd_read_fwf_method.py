@@ -124,7 +124,7 @@ def get_hscoccit(year, month=12, path=rawdata_folder):
         print(f"Import from txt file: {file_path}")
     else:
         print(f"Import from dat file: {file_path}")
-    
+
     col_names = ['f1','f2','f3','f4','f5','f6','f7','f8']
     col_widths = [1,8,3,3,18,18,18,18]
 

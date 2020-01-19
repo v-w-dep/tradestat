@@ -10,8 +10,6 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 3) Area    (total number:   9)
 4) Country (total number: 214)
 
-
-
 ### Developing or suggested working environment: 
 - Python version 3.6 or above
 - Window 10
@@ -23,6 +21,28 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 4) [openpyxl](https://openpyxl.readthedocs.io/en/stable/index.html)
 5) [pyprind](https://github.com/rasbt/pyprind)
 6) [pypiwin32](https://github.com/mhammond/pywin32); try pip install pywin32 or pip install pypiwin32
+
+### Folder description:
+1) [BSO](https://github.com/v-w-dep/tradestat/tree/master/BSO)	
+   self-implemented package focusing on reading raw data, calculating the trade values
+   rawdata_pd_read_fwf_method.py, it is a module using [pandas.read_fwf](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_fwf.html), as raw data is fixed-width format
+   
+2) [C&SD_raw_data](https://github.com/v-w-dep/tradestat/tree/master/C%26SD_raw_data)
+   A few of periods of raw data in DAT format to demonstrate, and description file can be found
+   
+3) [EXE_spec] can be ignored
+
+4) [Output_completed_as_example](https://github.com/v-w-dep/tradestat/tree/master/Output_completed_as_example)
+   Full completed reports in Excel format as examples can be downloaded 
+
+5) [export](https://github.com/v-w-dep/tradestat/blob/master/export/export_file.py)	
+   export_file.py mainly focus on exporting excel files with defined format using openpyxl
+   and win32com.client for automation
+   
+6) [metadata](https://github.com/v-w-dep/tradestat/tree/master/metadata)
+   define the country, area, region and industry codes and related information
+
+### Examples:
 
 ### Instruction to use:
 1) - Run one of the world.py, region.py, area.py, country.py each time
@@ -37,8 +57,4 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 - region  
 [![link not valid](http://img.youtube.com/vi/5oGL_wVnG8g/0.jpg)](http://www.youtube.com/watch?v=5oGL_wVnG8g "tradestat instruction: region")
 
-### Trade statistics raw data definition:
-A few of periods of raw data in DAT format to demonstrate, and description file can be found [here](https://github.com/oda-developer/tradestat/tree/master/C%26SD_raw_data) in this repository
 
-### Examples:
-Full completed reports in Excel format as examples can be downloaded in [Output_completed_as_example](https://github.com/oda-developer/tradestat/tree/master/Output_completed_as_example) in this repository

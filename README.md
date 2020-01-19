@@ -26,11 +26,9 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 1) [BSO](https://github.com/v-w-dep/tradestat/tree/master/BSO)	
    self-implemented package focusing on reading raw data, calculating the trade values
    
-   rawdata_pd_read_fwf_method.py, a module using [pandas.read_fwf](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_fwf.html)
+   rawdata_pd_read_fwf_method.py, a module using [pandas.read_fwf](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_fwf.html) for reading fixed-width-format raw data.
    
-   as raw data is fixed-width format
-   
-   using relative import concept in Python
+   Relative import concept in Python is also used.
    
 2) [C&SD_raw_data](https://github.com/v-w-dep/tradestat/tree/master/C%26SD_raw_data)
    A few of periods of raw data in DAT format to demonstrate, and description file can be found

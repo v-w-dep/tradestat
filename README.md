@@ -25,12 +25,14 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 ### Folder description:
 1) [BSO](https://github.com/v-w-dep/tradestat/tree/master/BSO)	
    self-implemented package focusing on reading raw data, calculating the trade values
-   rawdata_pd_read_fwf_method.py, it is a module using [pandas.read_fwf](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_fwf.html), as raw data is fixed-width format
+   
+   rawdata_pd_read_fwf_method.py, a module using [pandas.read_fwf](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_fwf.html), as raw data is fixed-width format
+   using relative import concept in Python
    
 2) [C&SD_raw_data](https://github.com/v-w-dep/tradestat/tree/master/C%26SD_raw_data)
    A few of periods of raw data in DAT format to demonstrate, and description file can be found
    
-3) [EXE_spec] can be ignored
+3) EXE_spec can be ignored
 
 4) [Output_completed_as_example](https://github.com/v-w-dep/tradestat/tree/master/Output_completed_as_example)
    Full completed reports in Excel format as examples can be downloaded 
@@ -41,8 +43,6 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
    
 6) [metadata](https://github.com/v-w-dep/tradestat/tree/master/metadata)
    define the country, area, region and industry codes and related information
-
-### Examples:
 
 ### Instruction to use:
 1) - Run one of the world.py, region.py, area.py, country.py each time

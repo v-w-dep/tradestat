@@ -53,6 +53,7 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 4) Reports in Excel format will be generated in a new folder "Output"
 
 #### Instruction video:
+Can see video by clicking the image below:
 - world   
 [![link not valid](http://img.youtube.com/vi/xAyWChMQHxM/0.jpg)](http://www.youtube.com/watch?v=xAyWChMQHxM "tradestat instruction: world")
 - region  

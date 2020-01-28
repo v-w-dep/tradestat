@@ -18,9 +18,10 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 1) [pandas](https://github.com/pandas-dev/pandas) 
 2) [NumPy](https://www.numpy.org)
 3) [xlrd](https://github.com/python-excel/xlrd)
-4) [openpyxl](https://openpyxl.readthedocs.io/en/stable/index.html)
-5) [pyprind](https://github.com/rasbt/pyprind)
-6) [pypiwin32](https://github.com/mhammond/pywin32); try pip install pywin32 or pip install pypiwin32
+4) [xlsxwriter](https://pypi.org/project/XlsxWriter/)
+5) [openpyxl](https://openpyxl.readthedocs.io/en/stable/index.html)
+6) [pyprind](https://github.com/rasbt/pyprind)
+7) [pypiwin32](https://github.com/mhammond/pywin32); try pip install pywin32 or pip install pypiwin32
 
 ### Folder description:
 1) [BSO](https://github.com/v-w-dep/tradestat/tree/master/BSO)	

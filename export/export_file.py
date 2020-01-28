@@ -230,7 +230,7 @@ def autofit(excel_name, currency, money):
         excel = Dispatch('Excel.Application')
     except e as exception:
         print(e)
-        print("Error exist when win32 connect with Excel Application")
+        print("Error exists while win32 connects with Excel Application")
 
     thisdir = os.getcwd()
     wb = excel.Workbooks.Open(thisdir+"/"+excel_name)

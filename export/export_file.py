@@ -226,7 +226,12 @@ def adjust_excelformat_openpyxl(excel_name, currency, money):
 
 def autofit(excel_name, currency, money):
     """using win32com.client to control excel to autofit"""
-    excel = Dispatch('Excel.Application')
+    try:
+        excel = Dispatch('Excel.Application')
+    except e as exception:
+        print(e)
+        print("Error exist when win32 connect with Excel Application")
+
     thisdir = os.getcwd()
     wb = excel.Workbooks.Open(thisdir+"/"+excel_name)
     ws = wb.Worksheets(f"{currency}_{money}")

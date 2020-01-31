@@ -41,7 +41,7 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 
 5) [export](https://github.com/v-w-dep/tradestat/blob/master/export/export_file.py)	
    export_file.py mainly focus on exporting excel files with defined format using openpyxl
-   and win32com.client for automation
+   and win32com.client for autofit column width in excel
    
 6) [metadata](https://github.com/v-w-dep/tradestat/tree/master/metadata)
    define the country, area, region and industry codes and related information

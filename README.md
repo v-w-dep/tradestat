@@ -44,7 +44,7 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
    and win32com.client for autofit column width in excel
    
 6) [metadata](https://github.com/v-w-dep/tradestat/tree/master/metadata)
-   define the country, area, region and industry codes and related information
+   define the country, area, region, industry, product codes and related information
 
 ### Instruction to use:
 1) - Run one of the world.py, region.py, area.py, country.py each time

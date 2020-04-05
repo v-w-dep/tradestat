@@ -3,7 +3,7 @@ tradestat is a Python module to generate meaningful reports of HK's external mer
 
 The official government database website as reference: https://tradeidds.censtatd.gov.hk/Index/a83bc112c6c24d04ab04f9a4c987181e
 
-![link not valid](https://raw.githubusercontent.com/v-w-dep/tradestat/master/transform.PNG)
+![the link not valid](https://raw.githubusercontent.com/v-w-dep/tradestat/master/transform.PNG)
 
 - 4 types of reports are provided
 - HK's external merchandise trade by currency (HKD, USD) and dollar units (thousand, million) with: 

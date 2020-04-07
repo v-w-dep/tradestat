@@ -6,7 +6,7 @@ The reports include **HK's Export, Import, Re-Export, bilateral trades, etc. of 
 The official government database website as reference: https://tradeidds.censtatd.gov.hk/Index/a83bc112c6c24d04ab04f9a4c987181e
 
 ### Intuition  
-- RHS is the report for **HK with USA**, descriping general trade statistics with commodity classification
+- RHS is the report for **HK with USA**, describing general trade statistics with commodity classification
 - LHS is one of the raw data in numerical format
 ![the link not valid](https://raw.githubusercontent.com/v-w-dep/tradestat/master/transform.PNG)
 

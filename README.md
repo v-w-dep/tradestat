@@ -12,10 +12,12 @@ The official government database website as reference: https://tradeidds.censtat
 
 - 4 types of reports are provided
 - HK's external merchandise trade by currency (HKD, USD) and dollar units (thousand, million) with: 
-1) World   (total number:   1) 
-2) Region  (total number:  16)
-3) Area    (total number:   9)
-4) Country (total number: 214)
+1) World   (total number:   1x4 =   4) 
+2) Region  (total number:  16x4 =  64)
+3) Area    (total number:   9x4 =  36)
+4) Country (total number: 214x4 = 856)
+
+- altogther, 960 reports in Excel format will be generated, supposed within 30 mins (in my PC).
 
 ### Developing or suggested working environment: 
 - Python version 3.6 or above

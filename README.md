@@ -1,6 +1,8 @@
 # tradestat
 tradestat is a Python module to generate meaningful reports of HK's external merchandise trade statistics from numerical raw data issued by authorized department.
 
+The reports include HK's Export, Import, Re-Export, bilateral trades, etc. of different commodities with other countries, regions)
+
 The official government database website as reference: https://tradeidds.censtatd.gov.hk/Index/a83bc112c6c24d04ab04f9a4c987181e
 
 ![the link not valid](https://raw.githubusercontent.com/v-w-dep/tradestat/master/transform.PNG)

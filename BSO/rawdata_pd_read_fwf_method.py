@@ -42,8 +42,10 @@ def get_hsccit(year, month=12, path=rawdata_folder):
                     #widths=col_widths,
                     names=col_names,
                     converters={1:str})
+    print(df.dtypes)
     # select transaction type 1 (HS-8digit) only
     #print(df)
+
     HS8only = df.f1.isin([1])
     df = df[HS8only]
 
@@ -58,9 +60,9 @@ def get_hsccit(year, month=12, path=rawdata_folder):
     df['TT_Q'] = df['TX_Q'] + df['IM_Q']
 
     # add HS2, HS4 and HS6 columns
-    df['HS-2'] = [str(x)[:2] for x in df.f2]
-    df['HS-4'] = [str(x)[:4] for x in df.f2]
-    df['HS-6'] = [str(x)[:6] for x in df.f2]
+    df['HS-2'] = [(x)[:2] for x in df.f2]
+    df['HS-4'] = [(x)[:4] for x in df.f2]
+    df['HS-6'] = [(x)[:6] for x in df.f2]
 
     # conversion of hs to SITC
     hstositc = get_hstositc_code()
@@ -160,6 +162,7 @@ def get_hscoccit(year, month=12, path=rawdata_folder):
 if __name__ == '__main__':
     #calculate time spent
     print("test")
-    get_hsccit(2018, month='12') #4.75s 20200613 before modification
+    df = get_hsccit(2018, month='12') #4.63s 20200613 before modification
+    print(df)
     #get_hscoit(2018, month='12') #2.08s 20200613 before modification
-    #get_hscoccit(2018, month='12') #9.69s 20200613 before modification
+    #get_hscoccit(2018, month='12') #9.36s 20200613 before modification

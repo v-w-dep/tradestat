@@ -12,11 +12,12 @@ File names for above namely are:
 Define functions to get raw data from the 3 files, then merge in dataframe
 """
 import pandas as pd
-import time
+from .time_analysis import time_decorator
 from .hstositc import get_hstositc_code
 
 rawdata_folder="C&SD_raw_data"
 
+@time_decorator
 def get_hsccit(year, month=12, path=rawdata_folder):
     try:
         file_path = f'{path}/{year}{month}/hsccit.dat'
@@ -99,6 +100,7 @@ def get_hsccit(year, month=12, path=rawdata_folder):
     df['reporting_time'] = f'{year}{month}'
     return df
 
+@time_decorator
 def get_hscoit(year, month=12, path=rawdata_folder):
     try:
         file_path = f'{path}/{year}{month}/hscoit.dat'
@@ -157,6 +159,7 @@ def get_hscoit(year, month=12, path=rawdata_folder):
     df['reporting_time'] = f'{year}{month}'
     return df
 
+@time_decorator
 def get_hscoccit(year, month=12, path=rawdata_folder):
     try:
         file_path = f'{path}/{year}{month}/hscoccit.dat'
@@ -256,10 +259,8 @@ def mergedf(startyear=2016, endperiod=201906, type="hsccit"):
 
 if __name__ == '__main__':
     #calculate time spent
-    start_time = time.time()
     print("test")
-    df = get_hsccit(2019, month=10)
+    df = get_hsccit(2018, month='12') #3.19s 20200613 before modification
     print(df)
-
-    elapsed_time = round(time.time() - start_time, 2)
-    print("time used: ", elapsed_time, " seconds")
+    get_hscoit(2018, month='12') #1.51s 20200613 before modification
+    get_hscoccit(2018, month='12') #5.07s 20200613 before modification
